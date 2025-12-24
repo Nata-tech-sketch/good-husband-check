@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (score >= total - 1) {
       return {
         rank: "S",
-        title: "かなり良い旦那度（S）",
+        title: "神旦那度（S）",
         desc: "全体的に安定。信頼と協力が機能している状態です。今の良い習慣を“続ける仕組み”にするとさらに強いです。",
         actions: [
           "月1回、家計・予定・家事分担を10分だけ棚卸しする",
