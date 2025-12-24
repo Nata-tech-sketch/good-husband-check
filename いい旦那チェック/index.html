@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>いい旦那度チェック</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title">いい旦那度チェック</h1>
+        <p class="hero-sub">12問に答えるだけで、今の傾向をサクッと確認できます。</p>
+      </div>
+    </header>
+
+    <!-- Quiz -->
+    <section class="card" id="quizCard" aria-live="polite">
+      <div class="meta">
+        <span id="progressText">Q1 / 12</span>
+        <div class="progress" aria-label="進捗">
+          <div class="progress__bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <h2 class="question" id="questionText">質問がここに表示されます</h2>
+
+      <div class="choices">
+        <button class="btn btn--primary" id="btnYes" type="button">はい</button>
+        <button class="btn" id="btnNo" type="button">いいえ</button>
+      </div>
+
+      <div class="nav">
+        <button class="btn btn--ghost" id="btnBack" type="button">戻る</button>
+        <button class="btn btn--ghost" id="btnReset" type="button">最初から</button>
+      </div>
+
+      <p class="hint" id="hintText"></p>
+    </section>
+
+    <!-- Result -->
+    <section class="card hidden" id="resultCard" aria-live="polite">
+      <div class="resultTop">
+        <div class="badge" id="rankBadge">A</div>
+        <div>
+          <h2 class="resultTitle" id="resultTitle">結果タイトル</h2>
+          <p class="resultScore" id="resultScore">スコア: 0 / 12</p>
+        </div>
+      </div>
+
+      <div class="resultBody">
+        <p class="resultDesc" id="resultDesc"></p>
+
+        <h3 class="smallTitle">改善アクション（おすすめ3つ）</h3>
+        <ul class="list" id="actionList"></ul>
+
+        <div class="notice" id="noticeBox">
+          <strong>注意</strong>
+          <p class="noticeText" id="noticeText"></p>
+        </div>
+      </div>
+
+      <div class="choices">
+        <button class="btn btn--primary" id="btnRetry" type="button">もう一度診断する</button>
+        <button class="btn" id="btnCopy" type="button">結果をコピー</button>
+      </div>
+
+      <p class="hint" id="copyHint"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footnote">
+          ※本チェックは簡易診断です。安全に不安がある場合は、信頼できる相談先へ。
+        </p>
+
+        <nav class="footer-nav" aria-label="フッターナビ">
+          <ul class="footer-nav-contents">
+            <li class="footer-nav-list"><a href="https://福岡探偵.net" target="_blank" rel="noopener">会社概要</a></li>
+            <li class="footer-nav-list"><a href="https://福岡探偵.net" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-bottom-contents">
+          <p class="copyright-title">
+            <a href="https://福岡探偵.net" target="_blank" rel="noopener">アヴァンセ</a>
+          </p>
+          <small class="copyright-text">#浮気調査探偵事務所</small>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
